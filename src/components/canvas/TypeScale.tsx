@@ -56,7 +56,7 @@ export function TypeScale({ typography, dark }: Props) {
 
           <div className={`flex flex-col divide-y ${dividerCls}`}>
             {entries.map(([name, t]) => (
-              <div key={name} className="py-4 first:pt-0 last:pb-0">
+              <div key={name} className="py-5 first:pt-0 last:pb-0">
                 <div className="flex items-center gap-1.5 flex-wrap mb-2">
                   <span className={tagCls}>{name}</span>
                   {t.fontSize && <span className={tagCls}>{String(t.fontSize)}</span>}
@@ -67,8 +67,9 @@ export function TypeScale({ typography, dark }: Props) {
                   )}
                 </div>
 
+                <div className="overflow-x-hidden">
                 <p
-                  className="whitespace-nowrap overflow-hidden"
+                  className="whitespace-nowrap"
                   style={{
                     fontFamily: t.fontFamily ?? 'inherit',
                     fontSize: t.fontSize ? String(t.fontSize) : 'inherit',
@@ -80,6 +81,7 @@ export function TypeScale({ typography, dark }: Props) {
                 >
                   {PREVIEW_TEXT}
                 </p>
+                </div>
               </div>
             ))}
           </div>

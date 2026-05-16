@@ -84,7 +84,7 @@ export function Preview({ tokens, parseError }: Props) {
     <div className="flex flex-col h-full">
       <Toolbar dark={dark} onToggle={setDark} />
       <div className={`preview-root flex-1 overflow-y-auto ${dark ? 'bg-zinc-950' : 'bg-white'}`}>
-        <div className="px-6 py-6 max-w-6xl">
+        <div className="px-6 pt-6 pb-20 max-w-6xl">
           {/* Brand identity — subtle label */}
           {(tokens.name || tokens.description) && (
             <div className="mb-7">

@@ -6,7 +6,7 @@ interface Props {
   defaultSplit?: number
 }
 
-export function SplitPane({ left, right, defaultSplit = 45 }: Props) {
+export function SplitPane({ left, right, defaultSplit = 38 }: Props) {
   const [split, setSplit] = useState(defaultSplit)
   const containerRef = useRef<HTMLDivElement>(null)
   const dragging = useRef(false)
