@@ -10,15 +10,23 @@ export function Header() {
           href="https://github.com/google-labs-code/design.md"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
+          className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors"
         >
           spec ↗
+        </a>
+        <a
+          href="https://github.com/wtyanan/designmd.live/issues/new"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors"
+        >
+          feedback ↗
         </a>
         <a
           href="https://buymeacoffee.com/wtyanan"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-zinc-100 transition-colors"
+          className="flex items-center gap-1.5 text-xs text-zinc-200 hover:text-white transition-colors"
         >
           <span aria-hidden>☕</span>
           <span>Support</span>
