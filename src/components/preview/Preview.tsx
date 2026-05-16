@@ -62,9 +62,15 @@ export function Preview({ tokens, parseError }: Props) {
       <div className="flex flex-col h-full">
         <Toolbar dark={dark} onToggle={setDark} />
         <div className="flex-1 flex items-center justify-center p-8 bg-white">
-          <div className="text-center text-zinc-400">
-            <div className="text-2xl mb-2">←</div>
-            <div className="text-sm">Paste your DESIGN.md to preview</div>
+          <div className="text-center text-zinc-400 max-w-xs">
+            <div className="text-2xl mb-3">←</div>
+            <div className="text-sm font-medium text-zinc-500 mb-2">Paste your DESIGN.md here</div>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Start with a{' '}
+              <code className="font-mono text-zinc-500 bg-zinc-100 px-1 py-0.5 rounded">---</code>
+              {' '}YAML frontmatter block to unlock color tokens, typography scale, and cross-references.
+              Prose-only files work too — tokens are extracted automatically.
+            </p>
           </div>
         </div>
       </div>
@@ -78,7 +84,7 @@ export function Preview({ tokens, parseError }: Props) {
     <div className="flex flex-col h-full">
       <Toolbar dark={dark} onToggle={setDark} />
       <div className={`preview-root flex-1 overflow-y-auto ${dark ? 'bg-zinc-950' : 'bg-white'}`}>
-        <div className="px-6 py-6 max-w-3xl">
+        <div className="px-6 py-6 max-w-6xl">
           {/* Brand identity — subtle label */}
           {(tokens.name || tokens.description) && (
             <div className="mb-7">

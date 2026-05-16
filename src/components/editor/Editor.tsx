@@ -31,6 +31,15 @@ export function Editor({ value, onChange }: Props) {
   })
 
   useEffect(() => {
+    const view = viewRef.current
+    if (!view) return
+    const currentDoc = view.state.doc.toString()
+    if (currentDoc !== value) {
+      view.dispatch({ changes: { from: 0, to: currentDoc.length, insert: value } })
+    }
+  }, [value])
+
+  useEffect(() => {
     if (!containerRef.current) return
 
     const view = new EditorView({

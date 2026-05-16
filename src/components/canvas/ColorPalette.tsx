@@ -95,7 +95,7 @@ export function ColorPalette({ colors, colorGroups, dark }: Props) {
 
   const legend = (
     <p className="text-[10px] text-zinc-400 mb-4">
-      Contrast: <strong>⬜ on white</strong> · <strong>⬛ on black</strong> — AA = 4.5:1 · AAA = 7:1 · AA&nbsp;lg = 3:1
+      Each swatch shows WCAG contrast ratio against <strong>⬜ white</strong> and <strong>⬛ black</strong> backgrounds — <span className="text-emerald-600 font-medium">AA</span> (4.5:1, normal text) · <span className="text-emerald-600 font-medium">AAA</span> (7:1, enhanced) · <span className="text-yellow-600 font-medium">AA&nbsp;lg</span> (3:1, large text only)
     </p>
   )
 

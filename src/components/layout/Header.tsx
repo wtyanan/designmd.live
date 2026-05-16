@@ -22,14 +22,12 @@ export function Header() {
         >
           feedback ↗
         </a>
-        <a
-          href="https://buymeacoffee.com/wtyanan"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs text-zinc-200 hover:text-white transition-colors"
-        >
-          <span aria-hidden>☕</span>
-          <span>Support</span>
+        <a href="https://www.buymeacoffee.com/wtyanan" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me a Coffee"
+            style={{ height: 28, width: 'auto' }}
+          />
         </a>
       </nav>
     </header>

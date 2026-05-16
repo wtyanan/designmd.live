@@ -8,29 +8,61 @@
     <meta name="description" content="Write a DESIGN.md file, see your design system come alive. A browser-based sandbox that parses design tokens and renders a live component preview — no install required." />
     <meta name="author" content="designmd.live" />
     <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="design system, design tokens, DESIGN.md, component library, design sandbox, color palette, typography scale, CSS variables, Tailwind, frontend tooling" />
     <link rel="canonical" href="https://designmd.live/" />
 
-    <!-- Favicon -->
+    <!-- Favicon + icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Theme -->
+<!-- Theme -->
     <meta name="theme-color" content="#0f0f11" />
+    <meta name="application-name" content="designmd.live" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://designmd.live/" />
     <meta property="og:site_name" content="designmd.live" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="designmd.live — Live Design System Sandbox" />
     <meta property="og:description" content="Write a DESIGN.md file, see your design system come alive. Parses design tokens and renders a live component preview — no install required." />
     <meta property="og:image" content="https://designmd.live/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="designmd.live — a live preview of a DESIGN.md file rendered as a color palette, type scale, and component gallery" />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="designmd.live — Live Design System Sandbox" />
     <meta name="twitter:description" content="Write a DESIGN.md file, see your design system come alive. No install required." />
     <meta name="twitter:image" content="https://designmd.live/og.png" />
+    <meta name="twitter:image:alt" content="designmd.live sandbox preview" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "designmd.live",
+      "url": "https://designmd.live/",
+      "description": "A browser-based sandbox that parses a DESIGN.md file and renders a live design system — color palette, typography scale, and component gallery. No install required.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires a modern browser with JavaScript enabled",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Live DESIGN.md preview",
+        "Design token extraction from YAML frontmatter and prose",
+        "Color palette with WCAG contrast badges",
+        "Typography scale preview",
+        "Component interaction gallery",
+        "Dark/light mode toggle"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
